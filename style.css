@@ -335,7 +335,25 @@ main{
 }
 .thumbnail--large{
 	height: 480px;
+
 }
+.thumbnail--large:hover{
+	height: 480px;
+	transform:scale(1.5);
+	transition-duration: 0.5s;
+
+
+}
+.hidden{
+	overflow:hidden;
+	padding:0;
+
+}
+
+
+
+	
+
 .thumbnail:before{
 	content: "";
 	position: absolute;
