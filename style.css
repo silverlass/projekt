@@ -452,3 +452,61 @@ main{
 	border-color: #03A9F4;
 }
 
+.footer1{
+	background:lightgray;
+	padding:0 30%;
+	height:300px;
+	padding-top:50px;
+	
+}
+.footer2{
+	
+
+	display:flex;
+	justify-content: space-between;
+
+
+
+	
+	
+	
+}
+input[type=text]{
+	height:40px;
+	width:200px;
+
+	
+}
+input[type=checkbox]{
+	
+	
+}
+input[type=submit]{
+	height:50px;
+	width:100px;
+	background:black;
+	color:white;
+}
+input:focus+ .line{
+	background:blue;
+	margin:0%;
+}
+
+.check{
+	margin-top:20px;
+	
+}
+.submit{
+	margin-top:30px;
+	display:flex;
+	justify-content: center;
+}
+.line{
+	margin:0 50%;
+
+	
+	height:5px;
+	background:lightgray;
+	transition:1s ease;
+	transition: margin 0.2s;
+}
