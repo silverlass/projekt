@@ -134,6 +134,8 @@ section,
 }
 .margin-left--auto{
 	margin-left: auto;
+	display:inline-block;
+
 }
 .margin--auto{
 	margin:auto;
@@ -249,17 +251,22 @@ nav{
 	display: flex;
 }
 .nav__item{
+	height:5px;
+	width:60px;
 	position: relative;
-	padding:10px 30px;
+	background:darkgray;
+	padding:3px 0;
+	margin:10px 0;
 	text-transform: uppercase;
-	cursor: pointer;
-	font-size: 16px;
-	font-weight:500;
-	font-family: "Montserrat";
+	
+	
 }
-.nav__item:hover,
-.nav__item.active{
+
+
+.nupp:hover,
+.nupp:active{
 	background: rgba(255,255,255,0.1);
+	cursor: pointer;
 }
 
 
@@ -501,6 +508,7 @@ input:focus+ .line{
 
 /*checkbox animation*/
 .xxx{
+    
     height:18px;
     width:18px;
     border:1px solid #333;
@@ -542,4 +550,31 @@ input[type="checkbox"]:checked + label:before {
   animation-duration:0.8s;
   animation-fill-mode:forwards;
 }
+
+/* sidebar */
+
+.sidebar{
+	position:fixed;
+	right:0;
+	height:100vh;
+	width:20%;
+	background:black;
+	animation-name:animation4;
+	animation-duration:2s;
+	animation-delay:4s;
+	animation-fill-mode:both;
+	z-index:1;
+}
+
+@keyframes animation4{
+	0% { clip-path: inset(0 0 0 100%); }
+  100% { clip-path: inset(0 0 0 0); }
+
+  .mainbar{
+  	position:absolute;
+  	height:100%;
+  	width:80%;
+  	
+  	z-index:1;
+  }
 
